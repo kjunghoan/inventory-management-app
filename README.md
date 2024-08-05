@@ -22,8 +22,8 @@ This is an inventory management application creating using next.js and Google's 
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/your-repo.git
-    cd your-repo
+    git clone https://github.com/kjunghoan/inventory-management-app.git
+    cd inventory-management-app
     ```
 
 2. Install dependencies:
