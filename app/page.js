@@ -9,6 +9,7 @@ export default function Home() {
   const [inventory, setInventory] = useState([]);
   const [open, setOpen] = useState(false);
   const [itemName, setItemName] = useState("");
+  const [searchQuery, setSearchQuery] = useState("");
 
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -127,6 +128,15 @@ export default function Home() {
           handleOpen();
         }}
       >ADD NEW ITEM</Button>
+      <TextField
+        variant="outlined"
+        placeholder="Search Items"
+        value={searchQuery}
+        margin="normal"
+        onChange={e => {
+          setSearchQuery(e.target.value)
+        }}
+        />
       <Box border="1px solid #333">
         <Box
           width="800px"
@@ -150,7 +160,13 @@ export default function Home() {
           overflow="auto"
         >
           {
-            inventory.map(({ name, quantity }) => (
+            inventory
+            .filter(({ name }) => {
+              return name
+                      .toLowerCase()
+                      .includes(searchQuery.toLowerCase())
+            })
+            .map(({ name, quantity }) => (
               <Box
                 key={name}
                 width="100%"
