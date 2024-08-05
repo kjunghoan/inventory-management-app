@@ -1,26 +1,35 @@
 # Inventory Management App
 
----
-
 ## Table of Contents
 
----
-
 - [Description](#description)
+- [Installation](#installation)
 - [Usage](#usage)
 - [Learn More](#learn-more)
 - [Deploy to Vercel](#deploy-on-vercel)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Description
 
----
 This is an inventory management application creating using next.js and Google's [Firebase](https://firebase.google.com/).
 
-<!--![Image]([!!TODO!!])-->
+![Image](public/inventory-management-app.png)
+
+## Installation
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/yourusername/your-repo.git
+    cd your-repo
+    ```
+
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
 
 ## Usage
-
----
 
 1. Go to [firebase](https://firebase.google.com/) and create a project.
 2. create an app and Firestore Database
@@ -54,8 +63,33 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Sign up for a [Vercel](https://vercel.com/) account if you don't have one.
+2. Connect your GitHub repository to Vercel.
+3. Deploy your project by following the instructions on Vercel.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Contributing
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+To contribute to the inventory management application, please follow these steps:
+
+1. Fork the repository and clone it to your local machine.
+2. Create a new branch for your changes:
+  ```bash
+  git checkout -b feature/your-feature-name
+  ```
+3. Make your desired changes to the codebase.
+4. Test your changes locally to ensure they work as expected.
+5. Commit your changes with a descriptive commit message in past tense:
+  ```bash
+  git commit -m "Added feature/fix: Description of your changes"
+  ```
+6. Push your changes to your forked repository:
+  ```bash
+  git push origin feature/your-feature-name
+  ```
+7. Open a pull request on the original repository, explaining your changes and why they should be merged.
+
+Thank you for contributing to the inventory management application!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
