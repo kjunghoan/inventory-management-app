@@ -14,6 +14,8 @@
 
 This is an inventory management application creating using next.js and Google's [Firebase](https://firebase.google.com/).
 
+[Deployed demo](https://inventory-management-app-six-ebon.vercel.app/)
+
 ![Image](public/inventory-management-app.png)
 
 ## Installation
